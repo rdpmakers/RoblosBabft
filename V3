@@ -1,16 +1,23 @@
 -- make by Bacon @daffa_fakhrizzal
--- Bacon v3
+-- Bacon v3.5
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local quest = Instance.new("Frame")
 local TeleportMenu = Instance.new("Frame")
 local charqol = Instance.new("Frame")
+local tools = Instance.new("Frame")
 local title = Instance.new("TextLabel")
 local QuestTitle = Instance.new("TextLabel")
 local TeleportTitle = Instance.new("TextLabel")
 local CharTitle = Instance.new("TextLabel")
+local toolsTitle = Instance.new("TextLabel")
 local Text = Instance.new("TextButton")
+local healthx = Instance.new("TextButton")
+local jumpx = Instance.new("TextButton")
+local speedx = Instance.new("TextButton")
+local ChatBypasser = Instance.new("TextButton")
 local adminC = Instance.new("TextButton")
+local ShiftlockS = Instance.new("TextButton")
 local PengChar = Instance.new("TextButton")
 local FoxChar = Instance.new("TextButton")
 local ChickChar = Instance.new("TextButton")
@@ -24,9 +31,11 @@ local chqst = Instance.new("TextButton")
 local fabbi = Instance.new("TextButton")
 local pqst = Instance.new("TextButton")
 local Te = Instance.new("TextButton")
+local BeAdmin = Instance.new("TextButton")
 local close = Instance.new("TextButton")
 local QuestClose = Instance.new("TextButton")
 local TeleportClose = Instance.new("TextButton")
+local toolsClose = Instance.new("TextButton")
 local InnerCloud = Instance.new("TextButton")
 local openmain = Instance.new("Frame")
 local open = Instance.new("TextButton")
@@ -47,6 +56,15 @@ main.Size = UDim2.new(0, 432, 0, 291)
 main.Visible = false
 main.Active = true
 main.Draggable = true
+
+tools.Name = "tools"
+tools.Parent = ScreenGui
+tools.BackgroundColor3 = Color3.new(0, 0, 0)
+tools.Position = UDim2.new(0.0203577988, 0, 0.641277611, 0)
+tools.Size = UDim2.new(0, 432, 0, 291)
+tools.Visible = false
+tools.Active = true
+tools.Draggable = true
 
 quest.Name = "quest"
 quest.Parent = ScreenGui
@@ -80,9 +98,18 @@ title.Parent = main
 title.BackgroundColor3 = Color3.new(1, 0, 1)
 title.Size = UDim2.new(0, 332, 0, 31)
 title.Font = Enum.Font.GothamBold
-title.Text = "Bãçøñ V3"
+title.Text = "Bãçøñ V3.5"
 title.TextColor3 = Color3.new(0, 0, 0)
 title.TextSize = 14
+
+toolsTitle.Name = "toolsTitle"
+toolsTitle.Parent = tools
+toolsTitle.BackgroundColor3 = Color3.new(1, 0, 1)
+toolsTitle.Size = UDim2.new(0, 332, 0, 31)
+toolsTitle.Font = Enum.Font.GothamBold
+toolsTitle.Text = "Tool Menu"
+toolsTitle.TextColor3 = Color3.new(0, 0, 0)
+toolsTitle.TextSize = 14
 
 QuestTitle.Name = "QuestTitle"
 QuestTitle.Parent = quest
@@ -152,6 +179,26 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 Duration = 16;
 end)
 
+speedx.Name = "speedx"
+speedx.Parent = tools
+speedx.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+speedx.Position = UDim2.new(0.679518092, 0, 0.63, 0)
+speedx.Size = UDim2.new(0, 110, 0, 50)
+speedx.Font = Enum.Font.GothamBold
+speedx.Text = "2x walk speed"
+speedx.TextColor3 = Color3.new(0, 0, 0)
+speedx.TextScaled = true
+speedx.TextSize = 10
+speedx.TextWrapped = true
+speedx.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 32
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "Speed";
+        Text = "our walk speed is now x2";
+        Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150"})
+Duration = 16;
+end)
+
 discord.Name = "Discord"
 discord.Parent = main
 discord.BackgroundColor3 = Color3.new(0.333333, 1, 0)
@@ -168,6 +215,26 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "username & tag";
         Text = "username= baconishere & tag=8647";
         Icon = "rbxthumb://type=Avatar&id=3044336136&w=150&h=150"})
+Duration = 16;
+end)
+
+jumpx.Name = "jumpx"
+jumpx.Parent = tools
+jumpx.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+jumpx.Position = UDim2.new(0.35518092, 0, 0.63, 0)
+jumpx.Size = UDim2.new(0, 110, 0, 50)
+jumpx.Font = Enum.Font.GothamBold
+jumpx.Text = "2x hight jump"
+jumpx.TextColor3 = Color3.new(0, 0, 0)
+jumpx.TextScaled = true
+jumpx.TextSize = 10
+jumpx.TextWrapped = true
+jumpx.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "Jump";
+        Text = "our power of jump is now x2";
+        Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150"})
 Duration = 16;
 end)
 
@@ -223,6 +290,46 @@ game:GetService("Workspace").ChangeCharacter:FireServer("FoxCharacter")
 game:GetService("StarterGui"):SetCore("SendNotification", { 
         Title = "Character";
         Text = "Success to be Fox";
+        Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150"})
+Duration = 16;
+end)
+
+ShiftlockS.Name = "ShiftlockS"
+ShiftlockS.Parent = tools
+ShiftlockS.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+ShiftlockS.Position = UDim2.new(0.35518092, 0, 0.38, 0)
+ShiftlockS.Size = UDim2.new(0, 110, 0, 50)
+ShiftlockS.Font = Enum.Font.GothamBold
+ShiftlockS.Text = "Shiftlock Button"
+ShiftlockS.TextColor3 = Color3.new(0, 0, 0)
+ShiftlockS.TextScaled = true
+ShiftlockS.TextSize = 14
+ShiftlockS.TextWrapped = true
+ShiftlockS.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rdpmakers/RoblosBabft/main/shift"))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "Tool";
+        Text = "Shiftlock Button Enabled!";
+        Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150"})
+Duration = 16;
+end)
+
+ChatBypasser.Name = "ChatBypasser"
+ChatBypasser.Parent = tools
+ChatBypasser.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+ChatBypasser.Size = UDim2.new(0, 110, 0, 50)
+ChatBypasser.Font = Enum.Font.GothamBold
+ChatBypasser.Text = "Steal Build"
+ChatBypasser.Position = UDim2.new(0.679518092, 0, 0.38, 0)
+ChatBypasser.TextColor3 = Color3.new(0, 0, 0)
+ChatBypasser.TextScaled = true
+ChatBypasser.TextSize = 14
+ChatBypasser.TextWrapped = true
+ChatBypasser.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/StenDirt/Trash-Game/main/Script.lua")))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "Tool";
+        Text = "U can swear Word now!";
         Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150"})
 Duration = 16;
 end)
@@ -324,22 +431,63 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 Duration = 16;
 end)
 
+BeAdmin.Name = "BeAdmin"
+BeAdmin.Parent = tools
+BeAdmin.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+BeAdmin.Position = UDim2.new(0.036144577, 0, 0.379146934, 0)
+BeAdmin.Size = UDim2.new(0, 110, 0, 50)
+BeAdmin.Font = Enum.Font.GothamBold
+BeAdmin.Text = "Admin"
+BeAdmin.TextColor3 = Color3.new(0, 0, 0)
+BeAdmin.TextScaled = true
+BeAdmin.TextSize = 10
+BeAdmin.TextWrapped = true
+BeAdmin.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "Tools";
+        Text = "Now u can use admin";
+        Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150"})
+Duration = 16;
+end)
+
 adminC.Name = "adminC"
 adminC.Parent = main
 adminC.BackgroundColor3 = Color3.new(0.333333, 1, 0)
 adminC.Position = UDim2.new(0.036144577, 0, 0.63, 0)
 adminC.Size = UDim2.new(0, 110, 0, 50)
 adminC.Font = Enum.Font.GothamBold
-adminC.Text = "admin"
+adminC.Text = "tools"
 adminC.TextColor3 = Color3.new(0, 0, 0)
 adminC.TextScaled = true
 adminC.TextSize = 10
 adminC.TextWrapped = true
 adminC.MouseButton1Down:connect(function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+main.Visible = false
+tools.Visible = true
 game:GetService("StarterGui"):SetCore("SendNotification", { 
         Title = "Info";
-        Text = "Now u can use admin command";
+        Text = "U can use other tool from here";
+        Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150"})
+Duration = 16;
+end)
+
+healthx.Name = "healthx"
+healthx.Parent = tools
+healthx.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+healthx.Position = UDim2.new(0.036144577, 0, 0.63, 0)
+healthx.Size = UDim2.new(0, 110, 0, 50)
+healthx.Font = Enum.Font.GothamBold
+healthx.Text = "10x Health"
+healthx.TextColor3 = Color3.new(0, 0, 0)
+healthx.TextScaled = true
+healthx.TextSize = 10
+healthx.TextWrapped = true
+healthx.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.Humanoid.Health = 2000
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "Health";
+        Text = "our health is now x10";
         Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150"})
 Duration = 16;
 end)
@@ -450,6 +598,22 @@ TeleportClose.TextWrapped = true
 TeleportClose.MouseButton1Down:connect(function()
 main.Visible = true
 TeleportMenu.Visible = false
+end)
+
+toolsClose.Name = "toolsClose"
+toolsClose.Parent = tools
+toolsClose.BackgroundColor3 = Color3.new(1, 0, 0)
+toolsClose.Position = UDim2.new(0.879518092, 0, 0, 0)
+toolsClose.Size = UDim2.new(0, 40, 0, 31)
+toolsClose.Font = Enum.Font.GothamBlack
+toolsClose.Text = "X"
+toolsClose.TextColor3 = Color3.new(0, 0, 0)
+toolsClose.TextScaled = true
+toolsClose.TextSize = 14
+toolsClose.TextWrapped = true
+toolsClose.MouseButton1Down:connect(function()
+main.Visible = true
+tools.Visible = false
 end)
 
 CharClose.Name = "CharClose"
