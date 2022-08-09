@@ -1,1 +1,24 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/rdpmakers/RoblosBabft/main/V3"))()
+local function callback(Text)
+ if Text == "Yes UωU" then
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/rdpmakers/RoblosBabft/main/V4.5"))()
+elseif Text == ("No UωU") then
+ game:GetService("StarterGui"):SetCore("SendNotification", { 
+         Title = "UωU";
+         Text = "Script isnt loaded UωU";
+         Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150"})
+ Duration = 16;
+ end
+end
+
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "Script BaBFT UωU";
+ Text = "Load Script? UωU";
+ Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150";
+ Duration = 5;
+ Button1 = "Yes UωU";
+ Button2 = "No UωU";
+ Callback = NotificationBindable;
+})
