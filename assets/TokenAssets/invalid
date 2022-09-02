@@ -1,3 +1,4 @@
+
 game:GetService("StarterGui"):SetCore("SendNotification", { 
         Title = "Wrong Token";
         Text = token.Text .. "doesn't exist";
