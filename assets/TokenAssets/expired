@@ -1,0 +1,5 @@
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "Expired Token";
+        Text = "token:" .. token.Text .. "Expired";
+        Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150"})
+Duration = 16;
