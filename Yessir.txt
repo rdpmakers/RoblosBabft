@@ -1,4 +1,4 @@
- --[[Fano's Script Login]]
+--[[Fano's Script Login]]
 --[[D£¢rypt m£ |f y0u c∆n L0L]]
 --[[NCDev Team Evolution]]
 
