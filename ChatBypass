@@ -4,7 +4,7 @@ math.randomseed(tick())
 local ChatMain = require(game:GetService("Players").LocalPlayer.PlayerScripts.ChatScript.ChatMain)
 
 local function bypass()
-   ChatMain.MessagePosted:fire("dffhdfshfd"..math.random(100000,1000000))
+   ChatMain.MessagePosted:fire("dffhdfsiaoapsjaqqshshajakndhgsgBRUHhaiakakshhfd"..math.random(100000,1000000))
    ChatMain.MessagesChanged:fire(math.random(100000,1000000))
 end
 
