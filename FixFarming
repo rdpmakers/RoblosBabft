@@ -1,3 +1,4 @@
+print("AFK farm is begun Right Now")
 local function farm()
   game.Players.LocalPlayer.Character.Humanoid.Jump = true
   -- 1 - Model
@@ -133,7 +134,7 @@ local function farm()
   game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-53, -356, 9499))
   wait(6.5)
   local gaz = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
-  wait(17.5)
+  wait(14.5)
   local baz = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
   wait(1)
   if gaz == baz then
@@ -146,10 +147,9 @@ local function farm()
     wait(12.5)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/rdpmakers/RoblosBabft/main/FixFarm"))()
   elseif gaz ~= baz then
-    print("Not Stuck RN")
+    print("Not Stuck")
     wait (0.5)
     print("Doing AFK farm again, Doing CoolDown")
-    wait(12.5)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/rdpmakers/RoblosBabft/main/FixFarm"))()
   end
 end
