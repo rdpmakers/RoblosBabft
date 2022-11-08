@@ -1,0 +1,149 @@
+local function farm()
+  game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  -- 1 - Model
+  local obj1 = Instance.new("Model")
+  obj1.Parent = workspace
+  
+  -- 2 - Part
+  local obj2 = Instance.new("Part")
+  obj2.CFrame = CFrame.new(Vector3.new(-44, 34, 1369)) * CFrame.Angles(-0, 0, -0)
+  obj2.Material = Enum.Material.Neon
+  obj2.Size = Vector3.new(6.400000006, 0.200000003, 6.5999999)
+  obj2.Anchored = true
+  obj2.BrickColor = BrickColor.new("Maroon")
+  obj2.Friction = 0.30000001192093
+  obj2.Shape = Enum.PartType.Block
+  obj2.Parent = obj1
+  
+  wait(0.5)
+  game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-44, 0, 1369))
+  
+  -- 2 - Part
+  local obj3 = Instance.new("Part")
+  obj3.CFrame = CFrame.new(Vector3.new(-49, 28, 2193)) * CFrame.Angles(-0, 0, -0)
+  obj3.Material = Enum.Material.Neon
+  obj3.Size = Vector3.new(6.400000006, 0.200000003, 6.5999999)
+  obj3.Anchored = true
+  obj3.BrickColor = BrickColor.new("Maroon")
+  obj3.Friction = 0.30000001192093
+  obj3.Shape = Enum.PartType.Block
+  obj3.Parent = obj1
+  
+  wait(2)
+  game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-48, 28, 2193))
+  
+  -- 2 - Part
+  local obj4 = Instance.new("Part")
+  obj4.CFrame = CFrame.new(Vector3.new(-57, 53, 2964)) * CFrame.Angles(-0, 0, -0)
+  obj4.Material = Enum.Material.Neon
+  obj4.Size = Vector3.new(6.400000006, 0.200000003, 6.5999999)
+  obj4.Anchored = true
+  obj4.BrickColor = BrickColor.new("Maroon")
+  obj4.Friction = 0.30000001192093
+  obj4.Shape = Enum.PartType.Block
+  obj4.Parent = obj1
+  
+  wait(2)
+  game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-57, 53, 2964))
+  
+  
+  --part
+  local obj5 = Instance.new("Part")
+  obj5.CFrame = CFrame.new(Vector3.new(-43, 23, 3716)) * CFrame.Angles(-0, 0, -0)
+  obj5.Material = Enum.Material.Neon
+  obj5.Size = Vector3.new(6.400000006, 0.200000003, 6.5999999)
+  obj5.Anchored = true
+  obj5.BrickColor = BrickColor.new("Maroon")
+  obj5.Friction = 0.30000001192093
+  obj5.Shape = Enum.PartType.Block
+  obj5.Parent = obj1
+  
+  wait(2)
+  game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-43, 23, 3716))
+  
+  -- 4
+  local obj6 = Instance.new("Part")
+  obj6.CFrame = CFrame.new(Vector3.new(-43, 23, 4516)) * CFrame.Angles(-0, 0, -0)
+  obj6.Material = Enum.Material.Neon
+  obj6.Size = Vector3.new(6.400000006, 0.200000003, 6.5999999)
+  obj6.Anchored = true
+  obj6.BrickColor = BrickColor.new("Maroon")
+  obj6.Friction = 0.30000001192093
+  obj6.Shape = Enum.PartType.Block
+  obj6.Parent = obj1
+  
+  wait(2)
+  game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-43, 23, 4516))
+  
+  
+  --bruh
+  local obj7 = Instance.new("Part")
+  obj7.CFrame = CFrame.new(Vector3.new(-43, 23, 5316)) * CFrame.Angles(-0, 0, -0)
+  obj7.Material = Enum.Material.Neon
+  obj7.Size = Vector3.new(6.400000006, 0.200000003, 6.5999999)
+  obj7.Anchored = true
+  obj7.BrickColor = BrickColor.new("Maroon")
+  obj7.Friction = 0.30000001192093
+  obj7.Shape = Enum.PartType.Block
+  obj7.Parent = obj1
+  
+  wait(2)
+  game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-43, 23, 5316))
+  
+  local obj8 = Instance.new("Part")
+  obj8.CFrame = CFrame.new(Vector3.new(-43, 23, 6116)) * CFrame.Angles(-0, 0, -0)
+  obj8.Material = Enum.Material.Neon
+  obj8.Size = Vector3.new(6.400000006, 0.200000003, 6.5999999)
+  obj8.Anchored = true
+  obj8.BrickColor = BrickColor.new("Maroon")
+  obj8.Friction = 0.30000001192093
+  obj8.Shape = Enum.PartType.Block
+  obj8.Parent = obj1
+  
+  wait(2)
+  game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-43, 23, 6116))
+  
+  local obj9 = Instance.new("Part")
+  obj9.CFrame = CFrame.new(Vector3.new(-43, 23, 6916)) * CFrame.Angles(-0, 0, -0)
+  obj9.Material = Enum.Material.Neon
+  obj9.Size = Vector3.new(6.400000006, 0.200000003, 6.5999999)
+  obj9.Anchored = true
+  obj9.BrickColor = BrickColor.new("Maroon")
+  obj9.Friction = 0.30000001192093
+  obj9.Shape = Enum.PartType.Block
+  obj9.Parent = obj1
+  
+  wait(2)
+  game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-43, 23, 6916))
+  
+  local obj10 = Instance.new("Part")
+  obj10.CFrame = CFrame.new(Vector3.new(-43, 23, 7716)) * CFrame.Angles(-0, 0, -0)
+  obj10.Material = Enum.Material.Neon
+  obj10.Size = Vector3.new(6.400000006, 0.200000003, 6.5999999)
+  obj10.Anchored = true
+  obj10.BrickColor = BrickColor.new("Maroon")
+  obj10.Friction = 0.30000001192093
+  obj10.Shape = Enum.PartType.Block
+  obj10.Parent = obj1
+  
+  wait(2)
+  game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-43, 23, 7716))
+  
+  wait(2)
+  game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-53, -356, 9499))
+  
+  local gaz = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+  wait(20)
+  local baz = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+
+  if gaz ~= baz then
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-53, -356, 9499))
+    wait(2.25)
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-53, -356, 9499))
+    wait(2.25)
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-53, -356, 9499))
+  elseif gaz == baz then
+    print("Not Stuck RN")
+  end
+end
+
