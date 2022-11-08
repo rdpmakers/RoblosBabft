@@ -147,3 +147,4 @@ local function farm()
   end
 end
 
+farm()
