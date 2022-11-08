@@ -145,12 +145,12 @@ local function farm()
     wait(2.25)
     game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-53, -356, 9499))
     print("Doing AFK farm again, Doing CoolDown")
-    wait(15.25)
+    wait(14.5)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/rdpmakers/RoblosBabft/main/FixFarm"))()
   elseif gaz ~= baz then
     print("Not Stuck")
     wait (0.5)
-    print("Doing AFK farm again, Doing CoolDown")
+    print("Doing AFK farm again")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/rdpmakers/RoblosBabft/main/FixFarm"))()
   end
 end
