@@ -136,13 +136,13 @@ local function farm()
   wait(20)
   local baz = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
 
-  if gaz ~= baz then
+  if gaz == baz then
     game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-53, -356, 9499))
     wait(2.25)
     game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-53, -356, 9499))
     wait(2.25)
     game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-53, -356, 9499))
-  elseif gaz == baz then
+  elseif gaz ~= baz then
     print("Not Stuck RN")
   end
 end
