@@ -135,7 +135,7 @@ local function farm()
   local gaz = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
   wait(20)
   local baz = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
-
+  wait(4)
   if gaz == baz then
     game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-53, -356, 9499))
     wait(2.25)
